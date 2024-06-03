@@ -24,3 +24,4 @@ if (age > 17) & (res == "true"):
     print("You are able to vote")
 else:
      print("You are unable to vote")
+
