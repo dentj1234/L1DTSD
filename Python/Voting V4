@@ -1,0 +1,26 @@
+'''Voting thing'''
+name = input("What is your name? ")
+validlist = ["true", "false"]
+while True:
+    try:
+        age = int(input("What is your age? "))
+        if age < 0:
+            print("Please Enter a Real Age")
+        else:
+            break
+    except:
+        print("That is not a real Number")
+while True:
+    try:
+        res = str(input("Are you a resident of New Zealand? True/False: ").lower())
+        if res in validlist:
+            break
+        else:
+            print("Please use True Or False")   
+    except:
+        print("Please Use True or False")
+
+if (age > 17) & (res == "true"): 
+    print("You are able to vote")
+else:
+     print("You are unable to vote")
