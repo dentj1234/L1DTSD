@@ -4,6 +4,9 @@
     margin: 0px;
 }
 
+body{
+    background-color: black;
+}
 nav {
     background-color: rgb(175, 52, 25);
     display: flex;
@@ -27,3 +30,26 @@ nav a:hover {
     padding-right: 10px;
     display: inline-block;
 }
+
+.parallax-container {
+    /*  this is where the magic happens:  */
+    background-image: url("./Te Puia Resources/TePuia_1.jpg");
+    opacity: 80%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  
+    /* dimensions are important, ensure it is tall enough to scroll */ 
+    min-height: 80vh;
+  
+    /* you are free to lay out the container items with flexbox or whatever means you wish */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    scale: 200%;
+    color:white;
+  }
