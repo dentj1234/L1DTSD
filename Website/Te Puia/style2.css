@@ -1,23 +1,21 @@
-
 * {
     margin: 0px;
 }
-
-body{
-    background-color: black;
+body {
+    background-color:rgb(175, 52, 25) ;
 }
 nav {
     background-color: rgb(175, 52, 25);
     display: flex;
     align-items: center;
 }
+
 nav a {
     color: white;
     display: block;
     text-decoration: none;
     padding: 30px;
 }
-
 
 nav a:hover {
     background-color:rgb(131, 46, 27)
@@ -31,32 +29,41 @@ nav a:hover {
 }
 
 .heroimage {
-    /*  this is where the magic happens:  */
     background-image: url("./Te Puia Resources/TePuia_1.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
   
-    /* dimensions are important, ensure it is tall enough to scroll */ 
     min-height: 80vh;
   
-    /* you are free to lay out the container items with flexbox or whatever means you wish */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
+}
+
   .actheroimage {
-    /*  this is where the magic happens:  */
     background-image: url("./Te Puia Resources/tepuia-logo-w.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
   
-    /* dimensions are important, ensure it is tall enough to scroll */ 
     min-height: 80vh;
   
-    /* you are free to lay out the container items with flexbox or whatever means you wish */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutheroimage {
+    background-image: url("./Te Puia Resources/cards/20161214_072945000_iOS-1024x768.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  
+    min-height: 80vh;
+  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,7 +82,8 @@ nav a:hover {
     scale: 650%;
     color:white;
     text-shadow: 0px 1px 10px #000000;
-  }
+}
+
 .herotext {
     scale: 150%;
     padding: 80px;
@@ -83,13 +91,13 @@ nav a:hover {
     text-shadow: 0px 4px 8px #000000;
     font-family:fantasy;
 }
+
 p {
     color: white;
 }
 
 h1 {
     color:white;
-
 }
 
 .twocolumn {
@@ -99,6 +107,7 @@ h1 {
     padding: 50px;
     background-color:rgb(175, 52, 25);
 }
+
 .text {
     display: flex;
     flex-direction: column;
@@ -106,14 +115,88 @@ h1 {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .cards {
-    background-color: #f3f3f3;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    background-color: whitesmoke;
 }
-.three-column {
+.imgcard {
+    width: 33.33vw;
+}
+
+main a {
+    color: rgb(174, 53, 25);
+    display: block;
+    text-decoration: none;
+    padding: 30px;
+}
+main a:hover {
+    background-color:rgb(230, 230, 230)
+}
+
+.cardtext {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgb(174, 53, 25);
+    padding: 10px;
     display: flex;
+    align-items: center;
 }
-.familyimg {
-    scale: 50%;
+
+.footerlogoimg {
+    width: 7%;
+    padding-left: 10px;
+    padding-right: 30px;
+    display: inline-block;
+}
+
+.contact {
+    color: white;
+}
+
+.three-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.actcards {
+    padding-top:30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    background-color:rgb(175, 52, 25);
+}
+.actcards2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    background-color:rgb(175, 52, 25);
+}
+.actimgcard {
+    width: 33.33vw;
+}
+.acttext {
+    color:rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+
+.cardwhite {
+    text-align: center;
+    margin-top: 0px;
+    background-color: whitesmoke;
+}
+
+.card {
+    text-align: center;
+    margin-top: 0px;
+}
+.acttextwhite {
+    color:rgb(175, 52, 25);
+    font-size: 2rem;
 }
